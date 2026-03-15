@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.vercel/
+.DS_Store
+*.log
+*:Zone.Identifier
+founders-cv/
+/logo-techoroen.jpg
