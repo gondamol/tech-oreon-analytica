@@ -232,8 +232,8 @@ export const founderCards = [
     extras:
       "Published researcher, native Dholuo speaker, and MSc Epidemiology & Biostatistics candidate with experience spanning multi-country dashboards, RCT design and evidence translation for leadership teams.",
     skills: ["Polling design", "Biostatistics", "ETL and dashboards", "Field leadership", "Quantitative strategy"],
-    cv: "/founders-cv/Nichodemus_Amollo_CV.pdf",
-    email: "mailto:nichodemuswerre@gmail.com"
+    contactLabel: "Request full profile",
+    contactHref: "mailto:info@techoreonanalytica.com?subject=Leadership%20Profile%20Request%20-%20Nichodemus%20Amollo"
   },
   {
     role: "Co-Founder and Director, Technology, Data and Digital Intelligence",
@@ -243,8 +243,8 @@ export const founderCards = [
     extras:
       "Leads the infrastructure behind collection, dashboards, social listening, data governance and cyber-secure delivery. Also brings enterprise execution experience from Sigmoid Logistics and Oreonet.",
     skills: ["Research tech", "Digital intelligence", "Power BI and R Shiny", "Cybersecurity governance", "ICT delivery"],
-    cv: "/founders-cv/Evance%20Omondi%20Otieno%20CV..pdf",
-    email: "mailto:omondievance61@gmail.com"
+    contactLabel: "Request full profile",
+    contactHref: "mailto:info@techoreonanalytica.com?subject=Leadership%20Profile%20Request%20-%20Evance%20Omondi%20Otieno"
   }
 ];
 

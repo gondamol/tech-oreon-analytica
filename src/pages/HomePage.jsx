@@ -406,11 +406,11 @@ function HomePage() {
                   ))}
                 </div>
                 <div className="mt-6 flex flex-wrap gap-4">
-                  <a href={founder.cv} className="inline-flex rounded-full border border-brand-orange/50 px-4 py-2 text-sm font-bold text-brand-orange transition hover:border-brand-orange hover:bg-brand-orange hover:text-brand-ink">
-                    View CV
-                  </a>
-                  <a href={founder.email} className="inline-flex rounded-full border border-white/12 px-4 py-2 text-sm font-bold text-white transition hover:border-brand-sky/60 hover:text-brand-sky">
-                    Contact directly
+                  <a
+                    href={founder.contactHref}
+                    className="inline-flex rounded-full border border-brand-orange/50 px-4 py-2 text-sm font-bold text-brand-orange transition hover:border-brand-orange hover:bg-brand-orange hover:text-brand-ink"
+                  >
+                    {founder.contactLabel}
                   </a>
                 </div>
               </article>
