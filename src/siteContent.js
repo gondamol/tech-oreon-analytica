@@ -92,6 +92,9 @@ export const engineStages = [
 export const labels = [
   {
     name: "Sentiment",
+    slug: "sentiment",
+    to: "/labels/sentiment",
+    ctaLabel: "Open sentiment framework",
     short: "See who is warming up, staying neutral, or turning sharply negative.",
     detail:
       "Useful for issue heat, candidate mood, brand approval and tracking the emotional direction of public conversation over time.",
@@ -99,6 +102,9 @@ export const labels = [
   },
   {
     name: "Topics",
+    slug: "topics",
+    to: "/labels/topics",
+    ctaLabel: "Open topics framework",
     short: "Group messy responses into themes like jobs, healthcare, cost of living and roads.",
     detail:
       "Lets teams compare what people are really talking about across counties, audience groups, or market segments.",
@@ -106,6 +112,9 @@ export const labels = [
   },
   {
     name: "Risk",
+    slug: "risk",
+    to: "/labels/risk",
+    ctaLabel: "Open risk framework",
     short: "Flag warning signs before backlash, rumor escalation or trust erosion spreads.",
     detail:
       "Strong for political environments, brand crises and community programs where dissatisfaction needs fast escalation.",
@@ -113,6 +122,9 @@ export const labels = [
   },
   {
     name: "Conduct",
+    slug: "conduct",
+    to: "/labels/conduct",
+    ctaLabel: "Open conduct framework",
     short: "Separate complaints about behaviour, service failures, corruption or abuse of process.",
     detail:
       "Helps institutions distinguish operational failures from deeper conduct and credibility concerns.",
@@ -120,6 +132,9 @@ export const labels = [
   },
   {
     name: "Journey",
+    slug: "journey",
+    to: "/labels/journey",
+    ctaLabel: "Open journey framework",
     short: "Map the path from awareness to action, usage, dropout or repeat support.",
     detail:
       "Especially useful for voter mobilisation, customer journeys and public program participation funnels.",
@@ -127,6 +142,9 @@ export const labels = [
   },
   {
     name: "Priority",
+    slug: "priority",
+    to: "/labels/priority",
+    ctaLabel: "Open priority framework",
     short: "Rank what matters most instead of drowning decision-makers in equal-weight findings.",
     detail:
       "Combines issue severity, urgency and frequency so leaders know what to fix, answer or emphasise first.",
@@ -134,6 +152,9 @@ export const labels = [
   },
   {
     name: "Channels",
+    slug: "channels",
+    to: "/labels/channels",
+    ctaLabel: "Open channels framework",
     short: "Know where the signal is strongest: call centers, WhatsApp, radio, TikTok, X or field teams.",
     detail:
       "Shows how communication patterns shift by audience and where intervention or listening should deepen next.",
@@ -141,12 +162,186 @@ export const labels = [
   },
   {
     name: "Vulnerability",
+    slug: "vulnerability",
+    to: "/labels/vulnerability",
+    ctaLabel: "Open vulnerability framework",
     short: "Surface the groups experiencing the sharpest pain or exclusion.",
     detail:
       "Useful for development programs, service-delivery studies and issue framing where equity matters.",
     outputs: ["At-risk segments", "Equity findings", "Population flags"]
   }
 ];
+
+export const labelPages = {
+  sentiment: {
+    eyebrow: "Label framework",
+    title: "Sentiment shows whether the mood is",
+    accent: "warming, stable or turning",
+    lead:
+      "Sentiment helps teams separate positive, neutral, mixed and negative feeling so shifts in public mood can be tracked over time instead of guessed from noise.",
+    overview:
+      "We use sentiment when clients need a reliable emotional read on opinion, especially in polling, brand tracking and fast-moving public conversations.",
+    useCases: [
+      ["Polling waves", "Track whether speeches, events or issue handling are improving mood or creating fresh resistance."],
+      ["Brand approval", "See whether customer feeling is recovering after action or sliding despite communications."],
+      ["Digital listening", "Measure the emotional direction of online narratives without losing the underlying themes."]
+    ],
+    signals: [
+      "Support vs frustration",
+      "Positive, negative and mixed reactions",
+      "County and segment mood comparison",
+      "Approval movement over time"
+    ],
+    next: { label: "See net sentiment next", to: "/labels/net-sentiment" }
+  },
+  topics: {
+    eyebrow: "Label framework",
+    title: "Topics turn scattered comments into",
+    accent: "clear issue clusters",
+    lead:
+      "Topic labelling groups open feedback into themes people can compare across counties, audience groups, customer segments and reporting periods.",
+    overview:
+      "This is the label set teams use when they need to know what people are actually talking about, not just whether overall feeling is positive or negative.",
+    useCases: [
+      ["Public opinion tracking", "Rank issues like jobs, healthcare, taxation, roads or security by frequency and momentum."],
+      ["Service listening", "Separate complaints into queues like access, delays, communication, pricing or staff behaviour."],
+      ["Brand and market work", "See which product attributes or competitor issues dominate customer conversations."]
+    ],
+    signals: [
+      "Issue salience ranking",
+      "Theme clustering",
+      "Cross-county comparison",
+      "Emerging issue detection"
+    ],
+    next: { label: "See case studies", to: "/resources/case-studies" }
+  },
+  risk: {
+    eyebrow: "Label framework",
+    title: "Risk labelling helps teams spot",
+    accent: "what needs escalation fast",
+    lead:
+      "Risk labels separate routine dissatisfaction from the signals that could grow into backlash, misinformation, trust erosion or reputational harm.",
+    overview:
+      "This framework is useful where leadership teams need early warning, not just descriptive reporting.",
+    useCases: [
+      ["Reputation monitoring", "Flag complaints or narratives that are gaining momentum and may require same-day response."],
+      ["Political environments", "Track issues that can trigger mobilisation, hostility or sudden opinion shifts."],
+      ["Programme delivery", "Surface areas where frustration is becoming a credibility problem rather than a simple service issue."]
+    ],
+    signals: [
+      "Reputation alerts",
+      "Escalation triggers",
+      "Risk heatmaps",
+      "Emerging threat summaries"
+    ],
+    next: { label: "Open risk & compliance solution", to: "/solutions/risk-compliance" }
+  },
+  conduct: {
+    eyebrow: "Label framework",
+    title: "Conduct labels separate operational pain from",
+    accent: "behaviour and integrity concerns",
+    lead:
+      "Conduct labelling helps institutions distinguish between ordinary service complaints and deeper issues involving misconduct, abuse, corruption or failure of process.",
+    overview:
+      "This is the right framework when the question is not just what went wrong, but whether the behaviour itself needs accountability action.",
+    useCases: [
+      ["Institutions", "Classify reports involving bribery, harassment, unfair treatment or abuse of office."],
+      ["Service systems", "Separate staff behaviour complaints from ordinary delay or process complaints."],
+      ["Programme oversight", "Track patterns that point to recurring integrity failures across locations or teams."]
+    ],
+    signals: [
+      "Incident coding",
+      "Misconduct grouping",
+      "Integrity watchlists",
+      "Accountability dashboards"
+    ],
+    next: { label: "Open risk & compliance solution", to: "/solutions/risk-compliance" }
+  },
+  journey: {
+    eyebrow: "Label framework",
+    title: "Journey labels show where people",
+    accent: "move forward, stall or drop off",
+    lead:
+      "Journey labelling maps the stages people pass through so teams can see where awareness becomes action, where friction starts and where support is lost.",
+    overview:
+      "It is especially useful for customer experience, mobilisation work and programmes that depend on progress through a process rather than a single interaction.",
+    useCases: [
+      ["Customer experience", "Track onboarding, use, support requests, repeat use and churn risk."],
+      ["Polling and mobilisation", "See where awareness, persuasion and turnout intent begin to weaken."],
+      ["Public programmes", "Measure access, uptake, dropout and re-engagement across different groups."]
+    ],
+    signals: [
+      "Drop-off points",
+      "Engagement stages",
+      "Response funnels",
+      "Participation patterns"
+    ],
+    next: { label: "Open customer experience solution", to: "/solutions/customer-experience" }
+  },
+  priority: {
+    eyebrow: "Label framework",
+    title: "Priority labels turn large feedback volumes into",
+    accent: "a practical action queue",
+    lead:
+      "Priority labelling combines urgency, severity and frequency so teams know what should be fixed, answered or escalated first.",
+    overview:
+      "Without priority labels, leaders can end up treating every issue as equally important and missing the cases that need immediate attention.",
+    useCases: [
+      ["Customer service", "Push urgent complaints, vulnerable cases or likely cancellations to the top of the queue."],
+      ["War-room reporting", "Show leadership the three or four things that matter most right now."],
+      ["Programme operations", "Separate immediate action items from lower-stakes monitoring issues."]
+    ],
+    signals: [
+      "Priority queues",
+      "Top action lists",
+      "Urgency scoring",
+      "War-room summaries"
+    ],
+    next: { label: "Open customer service solution", to: "/solutions/customer-service" }
+  },
+  channels: {
+    eyebrow: "Label framework",
+    title: "Channel labels show where the strongest",
+    accent: "signal is coming from",
+    lead:
+      "Channel labelling tracks where people are speaking up so teams can understand how feedback patterns differ across call centres, WhatsApp, radio, social media, field teams and web forms.",
+    overview:
+      "This framework helps organisations see not just what people are saying, but where those signals are building and which channels deserve more attention.",
+    useCases: [
+      ["Customer operations", "Compare ticket load and complaint types across service channels."],
+      ["Campaigns and public affairs", "See whether certain narratives are moving more through radio, digital or field networks."],
+      ["Research design", "Identify where to deepen listening when one channel starts carrying a stronger signal than the rest."]
+    ],
+    signals: [
+      "Channel mix",
+      "Platform comparison",
+      "Distribution maps",
+      "Source-weighted trends"
+    ],
+    next: { label: "Open customer service solution", to: "/solutions/customer-service" }
+  },
+  vulnerability: {
+    eyebrow: "Label framework",
+    title: "Vulnerability labels surface who is",
+    accent: "being hit hardest",
+    lead:
+      "Vulnerability labelling helps teams identify the groups experiencing sharper exclusion, pressure or harm so findings are not flattened into one average story.",
+    overview:
+      "This is especially useful where equity matters and decision-makers need to know which populations require tailored action or protection.",
+    useCases: [
+      ["Development work", "Identify the groups most affected by access gaps, cost pressure or service failures."],
+      ["Public services", "Track whether certain populations are consistently underserved or exposed to greater harm."],
+      ["Market and social research", "Surface the segments experiencing stronger barriers, pain points or exclusion."]
+    ],
+    signals: [
+      "At-risk segments",
+      "Equity findings",
+      "Population flags",
+      "Protection priorities"
+    ],
+    next: { label: "Start a consulting brief", to: "/consulting" }
+  }
+};
 
 export const homeResourceCards = [
   {

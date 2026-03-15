@@ -72,6 +72,15 @@ function ContextLabelsPage() {
                   </span>
                 ))}
               </div>
+              <Link
+                to={selectedLabel.to}
+                className="mt-8 inline-flex items-center gap-3 text-sm font-bold text-brand-orange transition hover:text-brand-sky"
+              >
+                {selectedLabel.ctaLabel}
+                <span className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-orange text-brand-ink">
+                  -&gt;
+                </span>
+              </Link>
             </div>
           </div>
         </div>

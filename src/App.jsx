@@ -4,6 +4,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import HomePage from "./pages/HomePage";
 import ContextLabelsPage from "./pages/ContextLabelsPage";
 import NetSentimentPage from "./pages/NetSentimentPage";
+import LabelPage from "./pages/LabelPage";
 import ConsultingPage from "./pages/ConsultingPage";
 import CareersPage from "./pages/CareersPage";
 import CaseStudiesPage from "./pages/CaseStudiesPage";
@@ -22,6 +23,7 @@ function App() {
             element={<ContextLabelsPage />}
           />
           <Route path="labels/net-sentiment" element={<NetSentimentPage />} />
+          <Route path="labels/:slug" element={<LabelPage />} />
           <Route path="resources/case-studies" element={<CaseStudiesPage />} />
           <Route path="consulting" element={<ConsultingPage />} />
           <Route path="careers" element={<CareersPage />} />

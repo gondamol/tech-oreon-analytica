@@ -56,22 +56,25 @@ function HomePage() {
   return (
     <main id="top">
       <section className="relative overflow-hidden">
-        <div className="mx-auto grid min-h-[calc(100vh-4.5rem)] max-w-7xl items-center gap-10 px-5 py-16 md:px-8 lg:grid-cols-[minmax(0,1.1fr)_minmax(340px,0.9fr)] lg:py-20">
+        <div className="hero-grid mx-auto grid max-w-7xl items-center px-5 py-14 md:px-8">
           <div className="hero-copy order-2 lg:order-1">
-            <p className="mb-6 inline-flex rounded-full border border-white/12 bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.28em] text-slate-300">
+            <p className="mb-5 inline-flex rounded-full border border-white/12 bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.28em] text-slate-300">
               Kenya-ready polling, market intelligence and digital insight
             </p>
-            <h1 className="max-w-5xl font-display text-5xl leading-[0.95] tracking-tight text-white sm:text-6xl lg:text-7xl xl:text-[5.7rem]">
-              Turn county voices, market signals and public sentiment into
-              <span className="mt-2 block italic text-brand-orange">real-time knowledge your team can act on</span>
+            <h1 className="hero-headline font-display text-white">
+              <span className="hero-line">Turn county voices,</span>
+              <span className="hero-line">market signals and</span>
+              <span className="hero-line">public sentiment into</span>
+              <span className="hero-line hero-headline-accent">real-time knowledge</span>
+              <span className="hero-line hero-headline-accent">your team can act on</span>
             </h1>
-            <p className="mt-8 max-w-3xl text-lg leading-8 text-slate-300 md:text-xl">
+            <p className="mt-6 max-w-3xl text-base leading-7 text-slate-300 md:text-lg md:leading-8">
               Tech Oreon Analytica combines researchers, data systems and live intelligence workflows to
               transform raw opinions into structured evidence for campaigns, institutions, brands and
               development partners working across Kenya.
             </p>
 
-            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <a
                 href="#engine"
                 className="inline-flex items-center justify-center rounded-full border border-brand-orange/60 bg-brand-orange px-8 py-4 text-base font-extrabold text-brand-ink transition hover:-translate-y-1 hover:shadow-[0_0_34px_rgba(233,148,20,0.4)]"
@@ -86,7 +89,7 @@ function HomePage() {
               </Link>
             </div>
 
-            <div className="mt-10 grid gap-4 md:grid-cols-2">
+            <div className="mt-8 grid gap-4 md:grid-cols-2">
               <div className="glass-card">
                 <p className="text-xs font-semibold uppercase tracking-[0.26em] text-brand-orange/85">Always on</p>
                 <p className="mt-3 text-base leading-7 text-slate-300">
@@ -269,10 +272,10 @@ function HomePage() {
                 ))}
               </div>
               <Link
-                to="/resources/news/make-your-data-more-meaningful-with-context-specific-labelling"
+                to={selectedLabel.to}
                 className="mt-8 inline-flex items-center gap-3 text-sm font-bold text-brand-orange transition hover:text-brand-sky"
               >
-                Learn more about our labels
+                {selectedLabel.ctaLabel}
                 <span className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-orange text-brand-ink">
                   -&gt;
                 </span>

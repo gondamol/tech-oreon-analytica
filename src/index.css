@@ -88,6 +88,26 @@ a {
   position: relative;
 }
 
+.hero-grid {
+  min-height: calc(100vh - 4.5rem);
+  gap: clamp(1.5rem, 2vw, 2.5rem);
+}
+
+.hero-headline {
+  font-size: clamp(3.35rem, 4.9vw, 5.3rem);
+  line-height: 0.86;
+  letter-spacing: -0.045em;
+}
+
+.hero-line {
+  display: block;
+}
+
+.hero-headline-accent {
+  color: var(--color-brand-orange);
+  font-style: italic;
+}
+
 .hero-copy::before {
   position: absolute;
   inset: -4rem auto auto -2rem;
@@ -97,6 +117,14 @@ a {
   background: radial-gradient(circle, rgba(233, 148, 20, 0.14), transparent 70%);
   filter: blur(10px);
   content: "";
+}
+
+@media (min-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: minmax(0, 1.08fr) minmax(340px, 0.92fr);
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
 }
 
 .section-frame {
